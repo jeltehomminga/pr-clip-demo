@@ -1,15 +1,20 @@
 {
   "expo": {
-    "name": "pr-clip-demo",
-    "slug": "pr-clip-demo",
+    "name": "Pothos",
+    "slug": "pothos",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "dev.stellarweb.pothos",
+      "supportsTablet": false
     },
     "android": {
+      "package": "dev.stellarweb.pothos",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -20,6 +25,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-localization"
+    ]
   }
 }
