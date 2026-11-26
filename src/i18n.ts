@@ -10,9 +10,14 @@ const en = {
     snake: "Snake plant",
     fig: "Fiddle-leaf fig",
   },
-  plantCount: (n: number) => days(n, "1 plant", "{n} plants"),
+  needWater: (n: number) => days(n, "1 plant needs water", "{n} plants need water"),
+  allWatered: "All plants are watered",
   everyDays: (n: number) => days(n, "Water every day", "Water every {n} days"),
-  lastWatered: (n: number) => days(n, "last watered yesterday", "last watered {n} days ago"),
+  overdue: (n: number) => days(n, "1 day overdue", "{n} days overdue"),
+  waterToday: "Water today",
+  waterIn: (n: number) => days(n, "Water tomorrow", "Water in {n} days"),
+  wateredToday: "Watered today",
+  watered: "Watered",
 }
 
 const nl: typeof en = {
@@ -23,9 +28,14 @@ const nl: typeof en = {
     snake: "Vrouwentong",
     fig: "Vioolbladplant",
   },
-  plantCount: (n) => days(n, "1 plant", "{n} planten"),
+  needWater: (n) => days(n, "1 plant heeft water nodig", "{n} planten hebben water nodig"),
+  allWatered: "Alle planten hebben water gehad",
   everyDays: (n) => days(n, "Elke dag water", "Elke {n} dagen water"),
-  lastWatered: (n) => days(n, "gisteren water gehad", "{n} dagen geleden water gehad"),
+  overdue: (n) => days(n, "1 dag te laat", "{n} dagen te laat"),
+  waterToday: "Vandaag water geven",
+  waterIn: (n) => days(n, "Morgen water geven", "Over {n} dagen water geven"),
+  wateredToday: "Vandaag water gegeven",
+  watered: "Water gegeven",
 }
 
 export type PlantId = keyof typeof en.plantNames

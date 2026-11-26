@@ -14,3 +14,6 @@ export const plants: Plant[] = [
   { id: "monstera", everyDays: 7, daysSince: 3 },
   { id: "snake", everyDays: 14, daysSince: 6 },
 ]
+
+/** Below 0: overdue. 0: water today. */
+export const daysLeft = (plant: Plant) => plant.everyDays - plant.daysSince

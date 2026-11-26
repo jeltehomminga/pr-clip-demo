@@ -7,6 +7,10 @@ const light = {
   muted: "#5f6b63",
   rule: "#e3e1d8",
   leaf: "#2f7d4f",
+  due: "#92600e",
+  overdue: "#c2410c",
+  track: "#e7ece8",
+  onLeaf: "#ffffff",
 }
 
 const dark: Theme = {
@@ -16,6 +20,10 @@ const dark: Theme = {
   muted: "#a2ada5",
   rule: "#2a322d",
   leaf: "#5cc08a",
+  due: "#e0a84a",
+  overdue: "#f08a5d",
+  track: "#26302a",
+  onLeaf: "#0f1311",
 }
 
 export type Theme = typeof light
